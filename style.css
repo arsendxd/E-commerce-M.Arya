@@ -1,0 +1,192 @@
+/* ========================= */
+/* CSS untuk halaman LOGIN */
+/* ========================= */
+
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body.login-body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(145deg, #000 0%, #111 100%);
+}
+
+.login-box {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #222;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.login-box input:focus {
+  outline: none;
+  background-color: #333;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #ddd;
+}
+
+.login-box p {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #ccc;
+}
+
+.login-box a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.login-box a:hover {
+  color: #bbb;
+}
+
+.error {
+  color: #ff4d4d;
+  font-size: 13px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+ 
+/* ========================= */
+/* CSS untuk halaman index */
+/* ========================= */
+
+    /* Styling for header and footer index */
+    table.header, table.footer {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #333;
+    }
+
+    table.header td, table.footer td {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header-content {
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .footer-content {
+      font-size: 16px;
+      color: white;
+    }
+
+    /* Header curve effect */
+    table.header {
+      border-radius: 15px 15px 0 0;
+    }
+
+    table.footer {
+      border-radius: 0 0 15px 15px;
+    }
+
+    /* Styling for header and footer keranjang */
+    table.header, table.footer {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #333;
+    }
+
+    table.header td, table.footer td {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header-content {
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .footer-content {
+      font-size: 16px;
+      color: white;
+    }
+
+    /* Header curve effect */
+    table.header {
+      border-radius: 15px 15px 0 0;
+    }
+
+    table.footer {
+      border-radius: 0 0 15px 15px;
+    }
+
+    /* Styling for header and footer kontak */
+    table.header, table.footer {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #333;
+    }
+
+    table.header td, table.footer td {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header-content {
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .footer-content {
+      font-size: 16px;
+      color: white;
+    }
+
+    /* Header curve effect */
+    table.header {
+      border-radius: 15px 15px 0 0;
+    }
+
+    table.footer {
+      border-radius: 0 0 15px 15px;
+    }
+    
