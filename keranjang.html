@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Bolivar Boots</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    table.header, table.footer {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #333;
+    }
+
+    table.header td, table.footer td {
+      padding: 20px;
+      text-align: center;
+    }
+
+    table.header {
+      border-radius: 15px 15px 0 0;
+    }
+
+    table.footer {
+      border-radius: 0 0 15px 15px;
+    }
+
+    table.nav {
+      width: 100%;
+      background-color: #444;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    table.nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      margin: 0 10px;
+      display: inline-block;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    table.nav a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #333;
+    }
+
+    .keranjang-content {
+      padding: 30px;
+      font-family: Georgia, serif;
+      color: #000;
+      text-align: center;
+    }
+
+    .keranjang-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .keranjang-content button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #cc0000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<table class="header">
+  <tr>
+    <td>
+      <font size="7" color="#FFFFFF">BOLIVAR BOOTS</font><br>
+      <font size="5" color="#FFFFFF">Desain Order | Service | Refurbish</font><br>
+      <font size="4" color="#FFFFFF">Since in 1997</font>
+    </td>
+  </tr>
+</table>
+
+<!-- Navigasi -->
+<table class="nav" cellpadding="10">
+  <tr align="center">
+    <td><a href="index.html">Beranda</a></td>
+    <td><a href="produk.html">Produk</a></td>
+    <td><a href="keranjang.html">Keranjang</a></td>
+    <td><a href="kontak.html">Kontak</a></td>
+    <td><a href="profil.html">Profil</a></td>
+  </tr>
+</table>
+
+<!-- Konten Keranjang -->
+<div class="keranjang-content">
+  <h2 style="font-family:Georgia,serif;color:#000;font-size:26px;margin-bottom:20px;">Belum Ada Produk di Keranjang</h2>
+  <!-- Daftar Produk Keranjang -->
+  <div id="daftar-keranjang"></div>
+</div>
+
+<!-- Footer -->
+<table class="footer">
+  <tr>
+    <td>
+      <font color="#FFFFFF" style="font-size:16px; font-family:Arial, sans-serif;">&copy; 2025 <b>BOLIVAR BOOTS</b>. All Rights Reserved.</font><br>
+      <font color="#FFFFFF" style="font-size:14px; font-family:Arial, sans-serif;">Crafted with passion for the finest leather craftsmanship.</font>
+    </td>
+  </tr>
+</table>
+
+<!-- Hubungkan ke file JavaScript eksternal -->
+<script src="JS/keranjang.js"></script>
+
+</body>
+</html>

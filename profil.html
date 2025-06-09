@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Bolivar Boots</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="login-body">
+
+  <div class="profile-box">
+    <h2>Profil Pelanggan</h2>
+    <div class="profile-detail">
+      <p><strong>Username:</strong> <span id="profil-username"></span></p>
+      <p><strong>Email:</strong> <span id="profil-email"></span></p>
+      <p><strong>Nomor Telepon:</strong> <span id="profil-telepon"></span></p>
+      <p><strong>Alamat:</strong> <span id="profil-alamat"></span></p>
+    </div>
+
+    <button onclick="logout()" class="logout-button">Logout</button>
+  </div>
+
+  <script>
+    // Cek login
+    if (localStorage.getItem('isLoggedIn') !== 'true') {
+      window.location.href = 'login.html';
+    }
+
+    // Tampilkan detail profil
+    document.getElementById('profil-username').innerText = localStorage.getItem('reg_username') || 'Tidak tersedia';
+    document.getElementById('profil-email').innerText = localStorage.getItem('reg_email') || 'Belum diisi';
+    document.getElementById('profil-telepon').innerText = localStorage.getItem('reg_telepon') || 'Belum diisi';
+    document.getElementById('profil-alamat').innerText = localStorage.getItem('reg_alamat') || 'Belum diisi';
+
+    // Fungsi logout
+    function logout() {
+      localStorage.removeItem('isLoggedIn');
+      localStorage.removeItem('username');
+      window.location.href = 'login.html';
+    }
+  </script>
+    <script src="JS/profil.js"></script>
+</body>
+</html>

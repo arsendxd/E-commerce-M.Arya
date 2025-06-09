@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Bolivar Boots</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="login-body">
+
+  <div class="login-box">
+    <h2>Daftar Akun Baru</h2>
+    <input type="text" id="new-username" placeholder="Username">
+    <input type="password" id="new-password" placeholder="Password">
+    <a href="login.html"><button onclick="register()">Daftar</button></a>
+    <p class="error" id="register-message"></p>
+    <p>Sudah punya akun? <a href="login.html">Login</a></p>
+  </div>
+
+  <script>
+    function register() {
+      const user = document.getElementById('new-username').value;
+      const pass = document.getElementById('new-password').value;
+
+      if (user && pass) {
+        localStorage.setItem('reg_username', user);
+        localStorage.setItem('reg_password', pass);
+        document.getElementById('register-message').innerText = "Pendaftaran berhasil! Silakan login.";
+      } else {
+        document.getElementById('register-message').innerText = "Isi semua kolom!";
+      }
+    }
+  </script>
+
+</body>
+</html>
